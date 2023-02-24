@@ -1,0 +1,201 @@
+.Titlu {
+    font-family: 'MV boli';
+    margin: auto;
+    color: grey;
+    text-align: center;
+    justify-content: center;
+}
+body{
+    color: rgb(75, 75, 75);
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.phantom{
+    display: none;
+}
+.to-do-new-task {
+    margin: auto;
+    height: 60px;
+    width: 480px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-style: groove;
+    border-color: grey;
+    box-shadow: inset 0 0px 1px rgb(0 0 0 / 10%);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#input-new-task {
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0;
+    border:0;
+    width: 300px;
+}
+.to-do-footer {
+    position: fixed;
+    bottom: 0;
+}
+.to-do-column1 {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+}
+.to-do-column2 {
+    float: left;
+    width: 60%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+}
+.to-do-column2 h3{
+    padding: 2px;
+}
+
+.to-do-column3 {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border: 0;
+    margin: 0;  
+    
+}
+
+.to-do-text-green{
+    color: #929292;
+    text-decoration: line-through;
+}
+.to-do-column1 input{
+    margin: 30%;
+    height: 30px;
+    width: 30px;
+
+}
+.to-do-buton-red{
+    display: none;
+    
+    border-radius: 100px;
+    color: red;
+    width: 30px;
+    height: 30px;
+    margin: 30%;
+    padding: 0px;
+    border: 0px;
+}
+.to-do-column3:hover  .to-do-buton-red {
+    display: block;
+}
+.to-do-column3:hover  .to-do-buton-green {
+    display: block;
+}
+
+.to-do-buton-green{
+    display: none;
+    
+    border-radius: 100px;
+    color: green;
+    width: 30px;
+    height: 30px;
+    margin: 30%;
+    border: 0px;
+}
+.to-do-list-item {
+    margin: auto;
+    margin-top: 1px;
+    height: 80px;
+    width: 500px;
+    background-color: #f4f4f4;
+    border-style:groove;
+    border-radius: 10px;
+
+}
+.to-do-list-tail {
+    display: flex;
+    margin: auto;
+    margin-top: 1px;
+    width: 500px;
+    height: 26px;
+    background-color: #f4f4f4;
+    border-style:groove;
+    border-radius: 10px;
+
+}
+.to-do-controller {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.to-do-controller button{
+    
+    font-size: 5px;
+    border-radius: 5px;
+    
+}
+.arrow {
+    border: solid black;
+    width: 4px;
+    height: 4px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: auto;
+
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .to-do-new-task button{
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: 10px;
+      left: -50px;
+      border-radius: 10px;
+  }
+  
+  .to-do-new-task  i{
+      position: relative;
+      top: 10px;
+  }
+  #to-do-counter{
+      margin-top: 0px;
+      margin-left:20px ;
+  }
+
+.to-do-on{
+    display: block;
+
+}
+.to-do-off{
+    display: none;
+}
+.night {
+    color: black;
+}
+.day {
+    color: #ffbf00;
+}
+.to-do-btn {
+    float: right;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.dark-mode{
+    background-color: black;
+    color: black;
+
+
+}

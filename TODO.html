@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TODO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title >to-do list</title>
+</head>
+<body>
+    <div>
+        <h1 id="to-do-title" class="Titlu" >
+            To-do List
+        </h1>
+    </div>
+    <br>
+    <div  class="to-do-new-task">
+       <button onclick="checkemall()"><i class="arrow down"></i><p></button>
+        <input id="input-new-task"  placeholder="Adauga un Task?" onkeydown="Create_list_item_input(this)" />
+    </div>
+    <ul class="to-do-list" id="listid">    
+        <div class=" phantom to-do-list-item">
+            <div class="to-do-column1">
+                <input class="to-do-input" type="checkbox" id="input1" onclick="green_my_list_item(this.id)"/>
+            </div>
+            <div class="to-do-column2">
+                <h3>Task number</h2>
+            </div>
+            <div class="to-do-column3">
+                <button class=" to-do-buton-red" id="buton1" onclick="kill_my_task(this.id)"><b>X</b></button>
+            </div>
+        </div> 
+    </ul>
+        <div class="to-do-list-tail ">   
+            <div class="to-do-controller">
+                <button  id="buton-all"> ALL</button>
+            </div>
+            <div class="to-do-controller">
+                <button  id="buton-active">ACTIVE</button>
+            </div>
+            <div class="to-do-controller">
+                <button  id="buton-completed">COMPLETED</button>
+            </div>
+            <div class=".to-do-btn to-do-controller">
+                <button  id="buton-DnN">
+                        <i class="icon fa fa-moon-o night " id="" style="font-size: 16px"></i>
+                </button>
+            </div>
+            <div class="to-do-controller">
+                <p id="to-do-counter"> nimic </p>
+            </div>
+        </div> 
+    <script src="TODO.js"></script>
+</body>
+</html>
